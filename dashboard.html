@@ -1,0 +1,66 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/styles/dashboard.css"/>
+    <script type="module" src="src/ui/dashboard.js" defer></script>
+    <script type="module" src="src/main.js" defer></script>
+    <title>My Dashboard</title>
+</head>
+<body>
+    <!-- Navbar -->
+    <header class="navbar">
+      <button id="burgerBtn" class="burger" aria-label="Abrir menu lateral">☰</button>
+      <div class="user-info" id="userInfo">
+        <p id="userName">Username</p>
+        <p id="countryName">UserCountry</p>
+        <p>@@</p>
+        <img id="countryFlag" alt="Country Flag">
+      </div>
+    </header>
+
+    <!-- Side Menu -->
+    <aside id="sideMenu" class="side-menu">
+          <button id="closeBtn" class="close-btn" aria-label="Fechar menu">×</button>
+        <ul>
+            <li><a href="#">Dashboard</a></li>
+            <li><a href="#">Profile</a></li>
+            <li><a href="#">Settings</a></li>
+            <li><a id="logoutBtn" href="#">Logout</a></li>
+        </ul>
+    </aside>
+
+    <!-- Conteúdo principal -->
+    <main class="container">
+
+      <div class="card" id="firstCard">
+        <h2>Placeholder Card 1</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tempor, justo nec
+          pharetra luctus, lorem turpis vehicula nisl, eu tempor nibh dolor nec metus.
+        </p>
+        <button>Ver mais</button>
+      </div>
+
+      <div class="card" id="secondCard">
+        <p id="inputPassword"></p>
+        <button id="generatorBtn">Generate Password</button>
+      </div>
+
+      <div class="card" id="weatherContainer">
+        <div id="searchDiv">
+          <input type="text" id="inputSearch">
+          <button id="searchBtn">></button>
+        </div>
+        <div class="weatherDiv">
+          <img id="imgWeather">
+          <p id="temperature"></p>
+        </div>
+        <div id="additionalInfo">
+          <p id="wind"></p>
+          <p id="timezone"></p>
+        </div>
+      </div>
+    </main>
+</body>
+</html>

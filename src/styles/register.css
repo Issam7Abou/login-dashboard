@@ -1,0 +1,90 @@
+body {
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: #fff;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 1rem;
+}
+
+.register-container {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 2rem 2.5rem;
+  border-radius: 12px;
+  width: 350px;
+  max-width: 90vw;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+  color: #fff;
+  margin: 2rem auto;
+}
+
+.register-container h1 {
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.register-container label {
+  display: block;
+  margin-top: 1rem;
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.register-container input,
+.register-container select {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  margin-top: 0.3rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  background: rgba(255, 255, 255, 0.9);
+  color: #222;
+  transition: outline 0.3s ease;
+}
+
+.register-container input:focus,
+.register-container select:focus {
+  outline: 2px solid #764ba2;
+  background: #fff;
+  color: #000;
+}
+
+.register-container button {
+  margin-top: 2rem;
+  width: 100%;
+  background: #764ba2;
+  border: none;
+  border-radius: 8px;
+  padding: 1rem 0;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  box-shadow: 0 4px 12px rgba(118, 75, 162, 0.6);
+}
+
+.register-container button:hover {
+  background: #5e3a96;
+  box-shadow: 0 6px 18px rgba(94, 58, 150, 0.8);
+}
+
+.register-container button:active {
+  background: #4a2c78;
+  box-shadow: none;
+}
+
+@media (max-width: 480px) {
+  .register-container {
+    width: 95vw;
+    padding: 1.5rem 1.5rem;
+  }
+}

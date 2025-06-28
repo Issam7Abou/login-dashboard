@@ -1,0 +1,45 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/styles/register.css"/>
+    <script type="module" src="src/main.js" defer></script>
+    <title>Login</title>
+</head>
+<body>
+    <main class="register-container">
+        <h1>Register</h1>
+        <form id="register-form" novalidate>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required />
+
+            <label for="age">Age</label>
+            <input type="number" id="age" name="age" min="1" max="120" required />
+
+            <label for="gender">Sex</label>
+            <select id="gender" name="gender" required>
+                <option value="" disabled selected>Select sex</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+            </select>
+
+            <label for="country">Country</label>
+            <input type="text" id="country" name="country" required />
+
+            <label for="phone">Mobile Phone</label>
+            <input type="tel" id="phone" name="phone" pattern="[0-9\s\-\+]+" required placeholder="+351 912345678" />
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required />
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required minlength="8" />
+
+            <label for="confirmPassword">Confirm Password</label>
+            <input type="password" id="confirmPassword" name="confirmPassword" required minlength="8" />
+
+            <button type="submit">Register</button>
+        </form>
+  </main>
+</body>
+</html>
